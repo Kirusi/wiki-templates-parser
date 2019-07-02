@@ -1,0 +1,27 @@
+{
+  "source": "./src/public",
+  "destination": "./docs",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "lint": {"enable": true},
+        "coverage": {"enable": true},
+        "accessor": {"access": ["public"], "autoPrivate": true},
+        "undocumentIdentifier": {"enable": true},
+        "unexportedIdentifier": {"enable": false},
+        "typeInference": {"enable": true},
+        "brand": {
+          "title": "wiki_template_parser Library",
+          "description": "A library to parse WikiMedia templates.",
+          "repository": "https://github.com/Kirusi/wiki-template-parser",
+          "site": "https://github.com/Kirusi/wiki-template-parser",
+          "author": "https://github.com/Kirusi"
+        }
+      }
+    },
+    {
+      "name": "esdoc-node"
+    }
+  ]
+}
